@@ -1,5 +1,6 @@
 - name: Install Alacritty
   become: yes
-  apt:
+  snap:
     name: alacritty
+    classic: yes
     state: present
