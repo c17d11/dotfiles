@@ -13,6 +13,8 @@ opacity = 0.9
 padding.x = 5
 padding.y = 5
 
+decorations = "none"
+
 
 [font]
 
