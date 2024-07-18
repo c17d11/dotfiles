@@ -10,8 +10,8 @@ args = ["--command=tmux"]
 
 opacity = 0.9
 
-padding.x = 5
-padding.y = 5
+padding.x = 0
+padding.y = 0
 
 decorations = "none"
 
