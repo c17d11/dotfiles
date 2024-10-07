@@ -22,3 +22,8 @@
 
 - name: Install Vim Plugins
   ansible.builtin.shell: 'vim +PlugUpdate +qa'
+
+- name: Install ctags
+  ansible.builtin.apt:
+      name: exuberant-ctags
+      state: present
