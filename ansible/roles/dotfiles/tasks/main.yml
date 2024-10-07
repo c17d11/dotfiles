@@ -1,5 +1,5 @@
 - name: Sync dotfiles
-  shell: "stow . --target {{ ansible_env.HOME }} --verbose=2"
+  shell: "stow . --target {{ ansible_env.HOME }} --verbose=2 --adopt"
   args:
       chdir: "{{ playbook_dir }}/../dotfiles"
   register: res
