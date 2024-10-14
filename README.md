@@ -1,5 +1,11 @@
 # Dotfiles
 
+This are my current dotfiles, and tools.
+
+There is an ansible playbook for installing everything.
+
+Have only tested this on Debian.
+
 ## Debian
 
 ### User permissions
