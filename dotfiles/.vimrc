@@ -31,6 +31,8 @@ function! GREP(args) abort
         let l:qflist = getqflist()
         if len(l:qflist) > 1
             copen
+        else
+            cclose
         endif
         redraw!
     finally
@@ -46,6 +48,8 @@ function! FZF() abort
         let l:qflist = getqflist()
         if len(l:qflist) > 1
             copen
+        else
+            cclose
         endif
         redraw!
     finally
