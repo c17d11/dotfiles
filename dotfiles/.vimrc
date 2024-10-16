@@ -25,7 +25,7 @@ function! GREP(args) abort
        let l:pattern = a:args
     endif
     let l:tmpfile = tempname()
-    execute 'silent !rg --column --line-number --no-heading --smart-case ' .. l:pattern .. ' | fzf --delimiter : --multi --preview "batcat --theme=1337 --style=numbers,changes --color always {1} --highlight-line {2}" --preview-window=right > ' .. fnameescape(l:tmpfile)
+    execute 'silent !rg --column --line-number --no-heading --smart-case ' .. l:pattern .. ' | fzf --query=' .. l:pattern .. ' --delimiter : --multi --preview "batcat --theme=1337 --style=numbers,changes --color always {1} --highlight-line {2}" --preview-window=right > ' .. fnameescape(l:tmpfile)
     try
         execute 'cfile ' .. l:tmpfile
         let l:qflist = getqflist()
