@@ -87,6 +87,7 @@ let mapleader = ' '
 command! -nargs=* Grep call GREP(<q-args>)
 nnoremap <leader>fg :Grep<cr>
 nnoremap <leader>ff :call FZF()<cr>
+nnoremap <leader>fw :call GREP("<cword>")<cr>
 nnoremap <leader><space> :call ToggleQuickFix()<cr>
 nnoremap <leader>w :qall!<cr>
 nnoremap <leader>e :Lex<cr>
