@@ -76,6 +76,8 @@ set hidden
 set hlsearch
 set incsearch
 
+set autoindent
+
 noswap
 
 set colorcolumn=80
